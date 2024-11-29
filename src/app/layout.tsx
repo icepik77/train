@@ -2,6 +2,13 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
+import { Jaro } from 'next/font/google'
+
+const jaro = Jaro({
+  subsets: ['latin'],
+  display: 'swap',
+})
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -12,6 +19,8 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
+
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -24,7 +33,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={jaro.className}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
