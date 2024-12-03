@@ -1,10 +1,11 @@
 import Image from "next/image";
+import { roboto } from "./fonts";
 
 export default function Home() {
   return (
     <div className="h-full">
       <div className="flex flex-col overflow-visible">
-        <div className="bg-sky-500 border-4 border-blue-500 w-full h-20">
+        <div className={`${roboto.className} font-bold bg-sky-500 border-4 border-blue-500 w-full h-20`}>
           What?
         </div>
         <div className="bg-sky-500 border-4 border-blue-500 w-full h-20">
@@ -16,8 +17,8 @@ export default function Home() {
           />
           <Image
             src="/svgItem.svg"
-            width={500}
-            height={500}
+            width={100}
+            height={100}
             alt="Telegram"
           />
         </div>
