@@ -21,6 +21,12 @@ export default function Home() {
             height={100}
             alt="Telegram"
           />
+           <Image
+            src="/svgItem.svg"
+            width={100}
+            height={100}
+            alt="Telegram"
+          />
         </div>
         <div className="bg-sky-500 border-4 border-blue-500 w-full h-20"></div>
         <div className="bg-sky-500 border-4 border-blue-500 w-full h-20 relative">
