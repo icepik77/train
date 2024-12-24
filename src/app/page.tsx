@@ -4,7 +4,7 @@ import { roboto } from "./fonts";
 export default function Home() {
   return (
     <div className="h-full">
-      <div className="flex flex-col overflow-visible">
+      <div className="flex flex-col overflow-visible mb-20">
         <div className={`${roboto.className} font-bold bg-sky-500 border-4 border-blue-500 w-full h-20`}>
           What?
         </div>
@@ -36,6 +36,24 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="grid grid-cols-4 grid-rows-3">
+        <div className="bg-sky-400 border-4 border-blue-500 h-20"></div>
+        <div className="bg-sky-400 border-4 border-blue-500 h-20"></div>
+        <div className="bg-sky-400 border-4 border-blue-500 h-20"></div>
+
+        <div className="bg-sky-400 border-4 border-blue-500 h-20"></div>
+        <div className="bg-sky-400 border-4 border-blue-500 h-20"></div>
+        <div className="bg-sky-400 border-4 border-blue-500 h-20"></div>
+
+        <div className="bg-sky-400 border-4 border-blue-500 h-20"></div>
+        <div className="bg-sky-400 border-4 border-blue-500 h-20"></div>
+        <div className="bg-sky-400 border-4 border-blue-500 h-20"></div>
+
+        <div className="bg-sky-400 border-4 border-blue-500 h-20"></div>
+        <div className="bg-sky-400 border-4 border-blue-500 h-20"></div>
+        <div className="bg-sky-400 border-4 border-blue-500 h-20"></div>
       </div>
     </div>
   );
